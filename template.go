@@ -150,7 +150,7 @@ var graphiqlTmpl = `
     // Defines a GraphQL fetcher using the fetch API. You're not required to
     // use fetch, and could instead implement graphQLFetcher however you like,
     // as long as it returns a Promise or Observable.
-    function graphQLFetcher(graphQLParams) {
+    function graphQLFetcher(graphQLParams, opts) {
         // This example expects a GraphQL server at the path /graphql.
         // Change this to point wherever you host your GraphQL server.
         const { headers = {} } = opts;
